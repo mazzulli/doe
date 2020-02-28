@@ -11,10 +11,10 @@ server.use(express.urlencoded({extended: true}))
 // conexão com o bando de dados
 const Pool = require('pg').Pool
 const db = new Pool({
-    user: 'postgres',
-    password: '123456',
-    host: 'localhost',
-    port: 5432,
+    user: 'doeadmin',
+    password: 'info1978',
+    host: 'mysql669.umbler.com',
+    port: 41890,
     database: "doe"
 })
 
