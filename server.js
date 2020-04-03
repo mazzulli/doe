@@ -8,6 +8,7 @@ server.use(express.static("public"))
 // habilitar o body do formulário
 server.use(express.urlencoded({extended: true}))
 
+<<<<<<< HEAD
 // conexão com o bando de dados POSTGRES
 // const Pool = require('pg').Pool
 // const db = new Pool({
@@ -27,6 +28,17 @@ const db = mysql.createConnection({
   password: "info1978",
   database: "doe",
 });
+=======
+// conexão com o bando de dados
+const Pool = require('pg').Pool
+const db = new Pool({
+    user: 'doeadmin',
+    password: 'info1978',
+    host: 'mysql669.umbler.com',
+    port: 41890,
+    database: "doe"
+})
+>>>>>>> 7a169df71d53615e92246607f7eb0ed9a6a4662d
 
 
 // configurando a template engine
